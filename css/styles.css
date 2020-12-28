@@ -1,0 +1,149 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#screenWrap {
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.setPlace {
+  background: rgb(224, 224, 224);
+  padding: 10px;
+}
+
+.set {
+  padding: 0 6px;
+  border: solid rgb(224, 224, 224) 1px;
+  border-radius: 10px;
+}
+
+select {
+  width: 100%;
+  height: 36px;
+  background: #fff;
+  margin-bottom: 10px;
+  font-size: 16px; /* 画面タッチした時のスマホzoomを抑えるため指定 */
+}
+
+.zipWrap {
+  display: flex;
+}
+
+input {
+  width: 82%;
+  height: 34px;
+  margin-right: 6px;
+  font-size: 16px; /* 画面タッチした時のスマホzoomを抑えるため指定 */
+}
+
+button {
+  width: 18%;
+  background: rgb(188, 188, 188);
+}
+
+.searchIcon {
+  width: 18px;
+  padding-top: 2px;
+}
+
+.inputError {
+  width: 78%;
+  border: 2px solid red;
+}
+
+#errorMsg {
+  font-size: 11px;
+  color: red;
+  letter-spacing: 0;
+}
+
+
+.top {
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+
+#today {
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+#place {
+  padding: 30px 0;
+  font-size: 40px;
+  word-wrap: break-word; /* 文字の折り返し */
+}
+
+#description {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+#nowImg {
+  width: 140px;
+}
+
+#temperature {
+  font-size: 45px;
+  padding-left: 12px;
+}
+
+.tempWrap {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 180px;
+  margin: 0 auto;
+  padding: 10px 0 0 12px;
+}
+
+
+
+/* ==================== */
+.sctWrap {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.weeksTitle {
+  font-size: 12px;
+  padding: 15px 0 0;
+}
+
+#datesWrap {
+  padding-bottom: 40px;
+}
+
+.dates {
+  width: 60px;
+  text-align: center;
+}
+
+.datesImg {
+  width: 30px;
+  height: 30px;
+}
+
+.dateTemp {
+  width: 30px;
+  text-align: center;
+}
+
+.dateHumidity {
+  width: 50px;
+  text-align: center;
+}

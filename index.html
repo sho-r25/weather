@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherApp</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="screenWrap">
+    <section class="setPlace">
+      <select name="selectPlace" id="selectPlace" class="set">
+        <!-- APIで取得できないものは県庁所在地で対応 -->
+        <option value="Tokyo">都道府県から探す</option> <!-- default:Tokyo -->
+        <option value="Hokkaido">北海道</option>
+        <option value="Aomori">青森</option>
+        <option value="Iwate">岩手</option>
+        <option value="Miyagi">宮城</option>
+        <option value="Akita">秋田</option>
+        <option value="Yamagata">山形</option>
+        <option value="Fukushima">福島</option>
+        <option value="Ibaraki">茨城</option>
+        <option value="Tochigi">栃木</option>
+        <option value="Gunma">群馬</option>
+        <option value="Saitama">埼玉</option>
+        <option value="Chiba">千葉</option>
+        <option value="Tokyo">東京</option>
+        <option value="Kanagawa">神奈川</option>
+        <option value="Niigata">新潟</option>
+        <option value="Toyama">富山</option>
+        <option value="Kanazawa">石川</option> 
+        <option value="Fukui">福井</option>
+        <option value="Yamanashi">山梨</option>
+        <option value="Nagano">長野</option>
+        <option value="Gifu">岐阜</option>
+        <option value="Shizuoka">静岡</option>
+        <option value="Aichi">愛知</option>
+        <option value="Mie">三重</option>
+        <option value="Otsu">滋賀</option>
+        <option value="Kyoto">京都</option>
+        <option value="Osaka">大阪</option>
+        <option value="Hyogo">兵庫</option>
+        <option value="Nara">奈良</option>
+        <option value="Wakayama">和歌山</option>
+        <option value="Tottori">鳥取</option>
+        <option value="Shimane">島根</option>
+        <option value="Okayama">岡山</option>
+        <option value="Hiroshima">広島</option>
+        <option value="Yamaguchi">山口</option>
+        <option value="Tokushima">徳島</option>
+        <option value="Kagawa">香川</option>
+        <option value="Ehime">愛媛</option>
+        <option value="Kochi">高知</option>
+        <option value="Fukuoka">福岡</option>
+        <option value="Saga">佐賀</option>
+        <option value="Nagasaki">長崎</option>
+        <option value="Kumamoto">熊本</option>
+        <option value="Oita">大分</option>
+        <option value="Miyazaki">宮崎</option>
+        <option value="Kagoshima">鹿児島</option>
+        <option value="Okinawa">沖縄</option>
+      </select>
+    
+      <div class="zipWrap">
+        <input type="text" placeholder="〒123-0000" class="set">
+        <!-- <button id="getZip" class="set">click!</button> -->
+        <button id="getZip" class="set"><img class="searchIcon" src="img/searchIcon.png" alt="click!"></button>
+      </div>
+      <div id="errorMsg"></div>
+    </section>
+  
+    <section class="top">
+      <div id="today"></div>
+      <div id="place"></div>
+      <div id="description"></div>
+      <img id="nowImg" src="" alt="">
+      <div id="temperature"></div>
+      <div class="tempWrap">
+        <div id="maxTemp"></div>
+        <div id="minTemp"></div>
+      </div>
+    </section>
+
+
+    <div class="sctWrap weeksTitle">
+      <div id="dates" class="dates">日付</div>
+      <div class="datesImg">天気</div>
+      <div id="dateMaxTemp" class="dateTemp">気温</div>
+      <div id="dateMinTemp" class="dateHumidity">湿度</div>
+    </div>
+    <div id="datesWrap"></div>
+
+
+
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
